@@ -26,10 +26,7 @@ const Skills = () => {
 
   return (
     <div className="mx-auto max-w-6xl px-6 py-16" ref={ref}>
-      <div className="flex items-center gap-3">
-        <Sparkles className="text-accent-cyan" />
-        <h2 className="text-3xl font-semibold text-white md:text-4xl">Skills</h2>
-      </div>
+      <h2 className="text-3xl font-semibold text-white md:text-4xl">Skills</h2>
       <div className="mt-10 grid gap-6 md:grid-cols-2">
         {SKILLS.map((skill) => {
           const Icon = icons[skill.icon];

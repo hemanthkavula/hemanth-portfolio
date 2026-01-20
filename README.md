@@ -2,6 +2,9 @@
 
 Single-page portfolio built with React 18, Vite, Tailwind CSS, Framer Motion, and Lucide React.
 
+## Live Site
+- https://hemanthkavula.com/
+
 ## Features
 - Animated hero with canvas particles, typed headline, and gradient atmosphere
 - Scroll progress bar, parallax glow accents, and section reveal animations

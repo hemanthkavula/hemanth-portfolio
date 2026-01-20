@@ -50,7 +50,7 @@ const About = () => {
         >
           <img
             src={headshot}
-            alt="Hemanth Kavula headshot placeholder"
+            alt="Hemanth Kavula headshot"
             className="rounded-[28px]"
           />
           <div className="glass mt-6 rounded-2xl p-5 transition hover:-translate-y-2">
