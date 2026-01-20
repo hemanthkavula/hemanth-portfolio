@@ -237,6 +237,6 @@ export const CERTIFICATIONS = [
   },
 ];
 
-export const ABOUT_TEXT = `Hi, I'm Hemanth Chowdary Kavula.
+export const ABOUT_TEXT = `Hi, I'm Kavula Hemanth Chowdary.
 Computer Science graduate student with hands-on experience in machine learning, statistical analysis, and business intelligence. Proven ability to build predictive models with 95%+ accuracy, analyze 50,000+ data records using Python and SQL, and deliver data-driven insights through Power BI and Tableau visualizations.
 Skilled in ETL pipelines, feature engineering, and cross-functional collaboration to drive KPI improvements. Seeking Data Scientist/Data Analyst roles to leverage advanced analytics, machine learning, and data storytelling to solve complex business problems.`;

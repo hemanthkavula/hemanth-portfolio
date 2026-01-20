@@ -39,7 +39,7 @@ const Contact = () => {
     <div className="bg-gradient-to-r from-primary/30 via-accent-cyan/20 to-accent-teal/30">
       <div className="mx-auto max-w-6xl px-6 py-16">
         <h2 className="text-3xl font-semibold text-white md:text-4xl">
-          Let’s Build Something Amazing Together
+          Let's Build Something Amazing Together
         </h2>
         <p className="mt-4 text-sm text-text-secondary">
           Open to Data Analyst, Data Scientist, and ML Engineer roles.
@@ -84,3 +84,4 @@ const Contact = () => {
 };
 
 export default Contact;
+

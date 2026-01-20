@@ -36,12 +36,9 @@ const Experience = () => {
                 <p className="mt-1 text-sm text-text-secondary">
                   {item.company} | {item.location}
                 </p>
-                <ul className="mt-3 space-y-2 text-sm text-text-secondary">
+                <ul className="mt-3 list-disc space-y-2 pl-4 text-sm text-text-secondary">
                   {item.highlights.map((highlight) => (
-                    <li key={highlight} className="flex items-start gap-2">
-                      <span className="mt-1 text-accent-cyan">•</span>
-                      <span>{highlight}</span>
-                    </li>
+                    <li key={highlight}>{highlight}</li>
                   ))}
                 </ul>
               </div>
@@ -54,3 +51,4 @@ const Experience = () => {
 };
 
 export default Experience;
+

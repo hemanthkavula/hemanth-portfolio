@@ -17,6 +17,7 @@ const icons = {
   Database,
   Cloud,
   Code2,
+  Sparkles,
 };
 
 const Skills = () => {

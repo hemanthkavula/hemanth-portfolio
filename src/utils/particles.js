@@ -1,7 +1,7 @@
 export const initParticles = (canvas, prefersReducedMotion) => {
   if (!canvas || prefersReducedMotion) return () => {};
   const ctx = canvas.getContext("2d");
-  const particleCount = 40;
+  const particleCount = 28;
   let animationFrame;
 
   const resize = () => {
@@ -16,7 +16,7 @@ export const initParticles = (canvas, prefersReducedMotion) => {
     radius: 1 + Math.random() * 2.4,
     vx: (Math.random() - 0.5) * 0.6,
     vy: (Math.random() - 0.5) * 0.6,
-    alpha: 0.3 + Math.random() * 0.5,
+    alpha: 0.2 + Math.random() * 0.25,
   }));
 
   const render = () => {

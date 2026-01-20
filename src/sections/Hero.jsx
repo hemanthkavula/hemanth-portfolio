@@ -59,10 +59,10 @@ const Hero = () => {
         >
           {PROFILE.title}
         </motion.h1>
-        <p className="text-lg text-text-secondary sm:text-xl">
+        <p className="text-lg text-white/70 sm:text-xl">
           {PROFILE.subtitle}
         </p>
-        <p className="font-mono text-base text-accent-cyan">
+        <p className="font-mono text-base text-accent-cyan/90 drop-shadow-[0_1px_2px_rgba(0,0,0,0.6)]">
           {typedText}
           <span className="animate-pulse"></span>
         </p>

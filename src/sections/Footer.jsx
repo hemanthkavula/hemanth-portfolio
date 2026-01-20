@@ -7,13 +7,13 @@ const Footer = () => {
       <div className="mx-auto flex max-w-6xl flex-col gap-6 px-6 md:flex-row md:items-center md:justify-between">
         <div>
           <p className="text-sm text-text-secondary">
-            © 2026 Hemanth Kavula. Built with React & ❤️
+            Copyright 2026 Hemanth Kavula. Built with React and Vite.
           </p>
           <p className="mt-3 text-xs text-text-secondary">
             Pitman, NJ 08071 | {PROFILE.phone}
           </p>
           <span className="mt-2 inline-flex items-center gap-2 rounded-full border border-white/10 px-3 py-1 text-xs text-text-secondary">
-            🟢 Available for opportunities
+            Available for opportunities
           </span>
         </div>
         <div className="flex items-center gap-4">
@@ -53,4 +53,5 @@ const Footer = () => {
 };
 
 export default Footer;
+
 
