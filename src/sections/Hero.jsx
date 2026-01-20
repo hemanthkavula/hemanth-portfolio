@@ -39,7 +39,7 @@ const Hero = () => {
   return (
     <section
       id="hero"
-      className="relative min-h-screen overflow-hidden pb-20 pt-28"
+      className="relative min-h-screen overflow-hidden pb-16 pt-28"
     >
       <div
         className={`${gradientClass} absolute inset-0 animate-shimmer opacity-80`}
@@ -75,6 +75,8 @@ const Hero = () => {
           </a>
           <a
             href={PROFILE.resumeUrl}
+            target="_blank"
+            rel="noreferrer"
             className="rounded-full border border-white/20 px-6 py-3 text-sm font-semibold text-white transition hover:-translate-y-1"
           >
             <span className="flex items-center gap-2">
@@ -83,9 +85,13 @@ const Hero = () => {
           </a>
         </div>
       </div>
-      <div className="absolute bottom-8 left-1/2 -translate-x-1/2 animate-bounce text-text-secondary">
+      <a
+        href="#about"
+        aria-label="Scroll to About section"
+        className="absolute bottom-8 left-1/2 -translate-x-1/2 animate-bounce text-text-secondary transition hover:text-white"
+      >
         <ArrowDown size={20} />
-      </div>
+      </a>
     </section>
   );
 };

@@ -37,7 +37,7 @@ const contacts = [
 const Contact = () => {
   return (
     <div className="bg-gradient-to-r from-primary/30 via-accent-cyan/20 to-accent-teal/30">
-      <div className="mx-auto max-w-6xl px-6 py-20">
+      <div className="mx-auto max-w-6xl px-6 py-16">
         <h2 className="text-3xl font-semibold text-white md:text-4xl">
           Let’s Build Something Amazing Together
         </h2>
@@ -71,6 +71,8 @@ const Contact = () => {
         <div className="mt-10">
           <a
             href={PROFILE.resumeUrl}
+            target="_blank"
+            rel="noreferrer"
             className="inline-flex items-center gap-2 rounded-full bg-white px-6 py-3 text-sm font-semibold text-base"
           >
             Download Resume

@@ -1,5 +1,4 @@
 import { Github } from "lucide-react";
-import projectImage from "../assets/project-placeholder.svg";
 import { PROJECTS } from "../constants";
 import { usePrefersReducedMotion } from "../hooks/usePrefersReducedMotion";
 
@@ -7,7 +6,7 @@ const Projects = () => {
   const prefersReduced = usePrefersReducedMotion();
 
   return (
-    <div className="mx-auto max-w-6xl px-6 py-20">
+    <div className="mx-auto max-w-6xl px-6 py-16">
       <h2 className="text-3xl font-semibold text-white md:text-4xl">Projects</h2>
       <div className="mt-10 grid gap-6 lg:grid-cols-3">
         {PROJECTS.map((project) => (
@@ -26,13 +25,6 @@ const Projects = () => {
               event.currentTarget.style.transform = "rotateX(0deg) rotateY(0deg)";
             }}
           >
-            <div className="overflow-hidden rounded-2xl">
-              <img
-                src={projectImage}
-                alt={`${project.title} preview`}
-                className="h-40 w-full object-cover transition duration-500 group-hover:scale-110"
-              />
-            </div>
             <div className="mt-5">
               <h3 className="text-lg font-semibold text-white">{project.title}</h3>
             </div>

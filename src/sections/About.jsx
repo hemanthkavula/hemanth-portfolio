@@ -39,7 +39,7 @@ const About = () => {
         className="absolute -top-24 right-10 h-56 w-56 rounded-full bg-primary/30 blur-3xl"
         style={{ transform: `translateY(${offset}px)` }}
       />
-      <div className="mx-auto grid max-w-6xl gap-10 px-6 py-20 md:grid-cols-[1fr_1.4fr]">
+      <div className="mx-auto grid max-w-6xl gap-10 px-6 py-16 md:grid-cols-[1fr_1.4fr]">
         <motion.div
           className="relative mx-auto w-full max-w-sm"
           variants={fadeLeft}

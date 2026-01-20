@@ -8,7 +8,7 @@ const Education = () => {
   const prefersReduced = usePrefersReducedMotion();
 
   return (
-    <div className="mx-auto max-w-6xl px-6 py-20" ref={ref}>
+    <div className="mx-auto max-w-6xl px-6 py-16" ref={ref}>
       <h2 className="text-3xl font-semibold text-white md:text-4xl">
         Education Timeline
       </h2>
