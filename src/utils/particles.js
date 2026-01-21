@@ -3,6 +3,7 @@ export const initParticles = (canvas, prefersReducedMotion) => {
   const ctx = canvas.getContext("2d");
   const particleCount = 28;
   let animationFrame;
+  let running = false;
 
   const resize = () => {
     const dpr = window.devicePixelRatio || 1;
@@ -22,6 +23,11 @@ export const initParticles = (canvas, prefersReducedMotion) => {
   }));
 
   const render = () => {
+    if (document.hidden) {
+      running = false;
+      return;
+    }
+    running = true;
     ctx.clearRect(0, 0, canvas.offsetWidth, canvas.offsetHeight);
     particles.forEach((p) => {
       p.x += p.vx;
@@ -36,12 +42,23 @@ export const initParticles = (canvas, prefersReducedMotion) => {
     animationFrame = requestAnimationFrame(render);
   };
 
+  const handleVisibility = () => {
+    if (document.hidden) {
+      cancelAnimationFrame(animationFrame);
+      running = false;
+      return;
+    }
+    if (!running) render();
+  };
+
   resize();
   render();
   window.addEventListener("resize", resize);
+  document.addEventListener("visibilitychange", handleVisibility);
 
   return () => {
     window.removeEventListener("resize", resize);
+    document.removeEventListener("visibilitychange", handleVisibility);
     cancelAnimationFrame(animationFrame);
   };
 };

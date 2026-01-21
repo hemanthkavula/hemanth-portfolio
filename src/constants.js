@@ -25,66 +25,90 @@ export const NAV_LINKS = [
 
 export const SKILLS = [
   {
-    title: "Technical Skills",
-    icon: "Code2",
-    items: ["Python", "JavaScript", "SQL", "R", "HTML", "CSS", "MongoDB", "Git", "Excel"],
-    proficiency: 90,
-  },
-  {
-    title: "Data Science & Analytics",
+    title: "Data Science & Machine Learning",
     icon: "Brain",
     items: [
       "Machine Learning",
       "Data Analysis",
+      "Statistical Modeling",
+      "Predictive Analytics",
+      "Natural Language Processing",
+      "Topic Modeling",
+      "Computer Vision (OpenCV)",
       "NumPy",
       "Pandas",
-      "Statistical Modeling",
-      "Topic Modeling",
-      "Data Visualization",
-      "Predictive Analytics",
-      "ETL Pipelines",
-      "Data Mining",
-      "Data Engineering",
-      "Natural Language Processing",
+      "Scikit-learn",
+      "TensorFlow"
     ],
     proficiency: 92,
   },
   {
-    title: "Tools & Frameworks",
+    title: "Data Engineering & Analytics",
     icon: "ChartPie",
     items: [
+      "ETL Pipelines",
+      "Data Engineering",
+      "Data Mining",
+      "Data Visualization",
       "Power BI",
       "Tableau",
-      "Scikit-learn",
-      "TensorFlow",
-      "React.js",
-      "Node.js",
-      "Express.js",
-      "OpenCV",
-      "Postman",
-      "Bootstrap",
+      "Excel"
+    ],
+    proficiency: 88,
+  },
+  {
+    title: "Programming & Databases",
+    icon: "Code2",
+    items: [
+      "Python",
+      "SQL",
+      "JavaScript",
+      "R",
+      "MongoDB"
+    ],
+    proficiency: 90,
+  },
+  {
+    title: "Cloud & Developer Tools",
+    icon: "Cloud",
+    items: [
       "AWS",
+      "Git",
+      "Postman"
     ],
     proficiency: 86,
   },
   {
-    title: "Core Competencies",
+    title: "Web Development",
+    icon: "Layout",
+    items: [
+      "HTML",
+      "CSS",
+      "React.js",
+      "Node.js",
+      "Express.js",
+      "Bootstrap"
+    ],
+    proficiency: 85,
+  },
+  {
+    title: "Professional Strengths",
     icon: "Sparkles",
     items: [
-      "Problem-Solving",
-      "Attention to Detail",
-      "Consistency & Reliability",
-      "Self-Motivation",
-      "Professionalism",
-      "Respectful Collaboration",
+      "Analytical Thinking",
+      "Problem-Solving Mindset",
+      "Data Storytelling",
+      "Cross-Functional Collaboration",
+      "Continuous Learning"
     ],
-    proficiency: 88,
+    proficiency: 90,
   },
 ];
 
 export const PROJECTS = [
   {
     title: "Mental Health Reddit Analysis",
+    impactLine: "Classified crisis signals and surfaced mental health themes.",
     description:
       "NLP pipeline to classify crisis-level content and uncover discussion themes.",
     impact: [
@@ -109,6 +133,7 @@ export const PROJECTS = [
   },
   {
     title: "Pizza Sales Data Analysis",
+    impactLine: "SQL-driven insights that improved staffing and revenue.",
     description: "Advanced SQL analysis for sales insights and KPI reporting.",
     impact: [
       "Analyzed 10,000+ transactions across 4 normalized tables",
@@ -123,6 +148,7 @@ export const PROJECTS = [
   },
   {
     title: "Automated Facial Recognition Attendance",
+    impactLine: "Real-time attendance automation with high recognition accuracy.",
     description: "Real-time facial recognition attendance automation.",
     impact: [
       "30+ FPS with 95% recognition accuracy",
@@ -181,6 +207,8 @@ export const EDUCATION = [
     period: "2024 - 2025",
     role: "MS Computer Science @ Rowan University",
     details: "GPA 3.8/4.0, focus on data science and machine learning.",
+    coursework:
+      "Relevant Coursework: Machine Learning, NLP, Data Mining, Database Systems, Statistics",
   },
   {
     period: "2019 - 2023",
@@ -238,5 +266,10 @@ export const CERTIFICATIONS = [
 ];
 
 export const ABOUT_TEXT = `Hi, I'm Hemanth Chowdary Kavula.
-Computer Science graduate student with hands-on experience in machine learning, statistical analysis, and business intelligence. Proven ability to build predictive models with 95%+ accuracy, analyze 50,000+ data records using Python and SQL, and deliver data-driven insights through Power BI and Tableau visualizations.
-Skilled in ETL pipelines, feature engineering, and cross-functional collaboration to drive KPI improvements. Seeking Data Scientist/Data Analyst roles to leverage advanced analytics, machine learning, and data storytelling to solve complex business problems.`;
+Computer Science graduate student specializing in machine learning, statistical analysis, and business intelligence. Iƒ?Tve built predictive models achieving 95%+ accuracy, analyzed 50,000+ records using Python and SQL, and delivered business insights through Power BI and Tableau visualizations.
+
+Iƒ?Tm experienced in ETL pipelines, feature engineering, and cross-functional collaboration to improve KPIs. Iƒ?Tm seeking Data Scientist and Data Analyst roles where I can apply advanced analytics and data storytelling to solve complex business problems.`;
+
+
+
+

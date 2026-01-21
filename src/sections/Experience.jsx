@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import { EXPERIENCE } from "../constants";
+import { highlightMetrics } from "../utils/highlightMetrics.jsx";
 import { useIntersectionObserver } from "../hooks/useIntersectionObserver";
 import { usePrefersReducedMotion } from "../hooks/usePrefersReducedMotion";
 
@@ -8,11 +9,11 @@ const Experience = () => {
   const prefersReduced = usePrefersReducedMotion();
 
   return (
-    <div className="mx-auto max-w-6xl px-6 py-16" ref={ref}>
-      <h2 className="text-3xl font-semibold text-white md:text-4xl">
+    <div className="section-shell" ref={ref}>
+      <h2 className="section-title mb-10 text-white md:mb-12">
         Experience Timeline
       </h2>
-      <div className="relative mt-10">
+      <div className="relative">
         <div className="absolute left-4 top-0 h-full w-px bg-white/10" />
         <motion.div
           className="absolute left-4 top-0 w-px bg-gradient-to-b from-primary to-accent-cyan"
@@ -26,19 +27,20 @@ const Experience = () => {
                 <span className="absolute inline-flex h-4 w-4 animate-ping rounded-full bg-accent-cyan/60" />
                 <span className="inline-flex h-2 w-2 rounded-full bg-accent-cyan" />
               </span>
-              <div className="glass rounded-2xl p-5">
-                <p className="text-xs font-mono uppercase text-text-secondary">
+              <div className="glass rounded-2xl border border-white/10 p-6 transition-all duration-300 hover:-translate-y-1 hover:border-white/20 hover:shadow-2xl md:p-8">
+                <p className="small-label font-mono uppercase">
                   {item.period}
                 </p>
                 <h3 className="mt-2 text-lg font-semibold text-white">
                   {item.role}
                 </h3>
-                <p className="mt-1 text-sm text-text-secondary">
-                  {item.company} | {item.location}
+                <p className="mt-1 text-sm">
+                  <span className="text-slate-200">{item.company}</span>
+                  <span className="text-slate-400"> | {item.location}</span>
                 </p>
-                <ul className="mt-3 list-disc space-y-2 pl-4 text-sm text-text-secondary">
-                  {item.highlights.map((highlight) => (
-                    <li key={highlight}>{highlight}</li>
+                <ul className="mt-3 list-disc space-y-2 pl-4 text-base leading-relaxed text-slate-300/85 md:text-lg">
+                  {item.highlights.slice(0, 3).map((highlight) => (
+                    <li key={highlight}>{highlightMetrics(highlight)}</li>
                   ))}
                 </ul>
               </div>
