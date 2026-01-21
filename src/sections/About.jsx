@@ -36,9 +36,9 @@ const About = () => {
         className="absolute -top-24 right-10 h-56 w-56 rounded-full bg-primary/30 blur-3xl"
         style={{ transform: `translateY(${offset}px)` }}
       />
-      <div className="mx-auto grid max-w-6xl grid-cols-1 items-start gap-10 px-6 py-20 md:px-10 md:py-28 lg:grid-cols-2 lg:gap-14">
+      <div className="section-shell grid grid-cols-1 items-start gap-6 lg:grid-cols-2 lg:gap-1">
         <motion.div
-          className="relative mx-auto w-full max-w-sm"
+          className="relative w-full max-w-md"
           variants={fadeLeft}
           initial={prefersReduced ? false : "hidden"}
           whileInView="visible"
@@ -58,7 +58,7 @@ const About = () => {
             </p>
           </div>
         </motion.div>
-        <div className="max-w-xl">
+        <div className="w-full text-left">
           <h2 className="text-5xl font-extrabold tracking-tight text-white md:text-6xl">
             About
           </h2>

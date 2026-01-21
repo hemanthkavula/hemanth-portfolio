@@ -4,7 +4,7 @@ import { PROFILE } from "../constants";
 const Footer = () => {
   return (
     <footer className="border-t border-[#1F2937] bg-[#0B0F19]">
-      <div className="mx-auto flex max-w-6xl flex-col gap-10 px-6 py-[60px]">
+      <div className="container-shell flex flex-col gap-10 py-[60px]">
         <div className="flex flex-col items-center gap-8 text-center md:flex-row md:items-start md:justify-between md:text-left">
           <div className="space-y-2">
             <p className="text-lg font-semibold text-white">
