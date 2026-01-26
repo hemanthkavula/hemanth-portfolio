@@ -5,7 +5,7 @@ export const PROFILE = {
   email: "hemanthkavula2001@gmail.com",
   socials: {
     linkedin: "https://linkedin.com/in/hemanthkavula",
-    github: "https://github.com/hemanthkavula",
+    github: "https://github.com/hemanthkavula?tab=repositories",
   },
   location: "Pitman, NJ",
   phone: "(856) 524-6050",
@@ -128,7 +128,7 @@ export const PROJECTS = [
       "Seaborn",
     ],
     links: {
-      github: "https://github.com/hemanthkavula/mental-health-reddit-analysis",
+      github: "https://github.com/hemanthkavula?tab=repositories/mental-health-reddit-analysis",
     },
   },
   {
@@ -143,7 +143,7 @@ export const PROJECTS = [
     ],
     tech: ["MySQL", "SQL", "Database Design"],
     links: {
-      github: "https://github.com/hemanthkavula/pizza-sales-sql-analysis",
+      github: "https://github.com/hemanthkavula?tab=repositories/pizza-sales-sql-analysis",
     },
   },
   {
@@ -159,7 +159,7 @@ export const PROJECTS = [
     tech: ["Python", "OpenCV", "Scikit-learn", "K-NN", "PCA", "Pandas"],
     links: {
       github:
-        "https://github.com/hemanthkavula/Automated-Facial-Recognition-based-Attendance-System",
+        "https://github.com/hemanthkavula?tab=repositories/Automated-Facial-Recognition-based-Attendance-System",
     },
   },
 ];

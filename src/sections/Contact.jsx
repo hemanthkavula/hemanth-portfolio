@@ -20,7 +20,7 @@ const contacts = [
   },
   {
     label: "GitHub",
-    value: "github.com/hemanthkavula",
+    value: "github.com/hemanthkavula?tab=repositories",
     href: PROFILE.socials.github,
     icon: Github,
     newTab: true,
