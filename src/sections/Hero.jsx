@@ -11,7 +11,8 @@ const Hero = () => {
   const { ref: heroRef, isVisible } = useIntersectionObserver({ threshold: 0.1 });
   const canvasRef = useRef(null);
   const [typedText, setTypedText] = useState("");
-  const phrase = "Building intelligent systems that turn data into business value.";
+  const phrase =
+    "Building scalable data pipelines and lakehouse platforms for enterprise analytics.";
 
   const gradientClass = useMemo(
     () =>
@@ -75,15 +76,15 @@ const Hero = () => {
             )}
           </p>
           <p className="mt-4 text-sm font-semibold tracking-wide !text-slate-100 md:text-base">
-            Python | SQL | Machine Learning | NLP | Power BI | AWS
+            Python | SQL | Spark | Azure | AWS | GCP
           </p>
         </div>
         <div className="flex flex-wrap gap-4">
           <a
-            href="#projects"
+            href="#experience"
             className="rounded-full bg-indigo-500 px-6 py-3 text-sm font-semibold text-white transition hover:-translate-y-1 hover:bg-indigo-400 hover:shadow-lg hover:shadow-indigo-500/30"
           >
-            View Projects
+            View Experience
           </a>
 
           <a
@@ -101,10 +102,10 @@ const Hero = () => {
 
         <div className="mt-2 flex flex-wrap gap-2">
           {[
-            "50,000+ records analyzed",
-            "95%+ model accuracy",
-            "8,823+ posts processed",
-            "15+ hours/week saved",
+            "5+ years data engineering",
+            "Lakehouse & warehouse pipelines",
+            "Batch & streaming systems",
+            "Multi-cloud delivery",
           ].map((item) => (
             <span
               key={item}

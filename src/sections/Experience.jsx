@@ -39,7 +39,7 @@ const Experience = () => {
                   <span className="text-slate-400"> | {item.location}</span>
                 </p>
                 <ul className="mt-3 list-disc space-y-2 pl-4 text-base leading-relaxed text-slate-300/85 md:text-lg">
-                  {item.highlights.slice(0, 3).map((highlight) => (
+                  {item.highlights.map((highlight) => (
                     <li key={highlight}>{highlightMetrics(highlight)}</li>
                   ))}
                 </ul>

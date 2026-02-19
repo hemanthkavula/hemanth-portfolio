@@ -7,10 +7,8 @@ import SectionWrapper from "./components/SectionWrapper";
 import Hero from "./sections/Hero";
 import About from "./sections/About";
 import Skills from "./sections/Skills";
-import Projects from "./sections/Projects";
 import Experience from "./sections/Experience";
 import Education from "./sections/Education";
-import Certifications from "./sections/Certifications";
 import Contact from "./sections/Contact";
 import Footer from "./sections/Footer";
 import { useParallax } from "./hooks/useParallax";
@@ -49,17 +47,11 @@ const App = () => {
         <SectionWrapper id="skills">
           <Skills />
         </SectionWrapper>
-        <SectionWrapper id="projects">
-          <Projects />
-        </SectionWrapper>
         <SectionWrapper id="experience">
           <Experience />
         </SectionWrapper>
         <SectionWrapper id="education">
           <Education />
-        </SectionWrapper>
-        <SectionWrapper id="certifications">
-          <Certifications />
         </SectionWrapper>
         <SectionWrapper id="contact">
           <Contact />

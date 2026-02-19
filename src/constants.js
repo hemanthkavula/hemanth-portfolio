@@ -1,14 +1,14 @@
 export const PROFILE = {
-  name: "Hemanth Chowdary Kavula",
-  title: "Data Scientist & ML Engineer",
-  subtitle: "MS Computer Science @ Rowan University | 3.8 GPA",
-  email: "hemanthkavula2001@gmail.com",
+  name: "Hemanth Kavula",
+  title: "Senior Data Engineer",
+  subtitle: "5+ years building scalable data pipelines and lakehouse solutions",
+  email: "Kavula.hemanth@gmail.com",
   socials: {
-    linkedin: "https://linkedin.com/in/hemanthkavula",
-    github: "https://github.com/hemanthkavula?tab=repositories",
+    linkedin: "https://www.linkedin.com/in/hemanthkavula/",
+    github: "https://github.com/hemanthkavula",
   },
   location: "Pitman, NJ",
-  phone: "(856) 524-6050",
+  phone: "856-524-6050",
   resumeUrl: "/resume.pdf",
 };
 
@@ -16,92 +16,86 @@ export const NAV_LINKS = [
   { id: "hero", label: "Home" },
   { id: "about", label: "About" },
   { id: "skills", label: "Skills" },
-  { id: "projects", label: "Projects" },
   { id: "experience", label: "Experience" },
   { id: "education", label: "Education" },
-  { id: "certifications", label: "Certifications" },
   { id: "contact", label: "Contact" },
 ];
 
 export const SKILLS = [
   {
-    title: "Data Science & Machine Learning",
-    icon: "Brain",
-    items: [
-      "Machine Learning",
-      "Data Analysis",
-      "Statistical Modeling",
-      "Predictive Analytics",
-      "Natural Language Processing",
-      "Topic Modeling",
-      "Computer Vision (OpenCV)",
-      "NumPy",
-      "Pandas",
-      "Scikit-learn",
-      "TensorFlow"
-    ],
+    title: "Programming & Querying",
+    icon: "Code2",
+    items: ["Python", "SQL", "Spark SQL"],
     proficiency: 92,
   },
   {
-    title: "Data Engineering & Analytics",
+    title: "Data Engineering & Modeling",
     icon: "ChartPie",
     items: [
+      "ETL Development",
       "ETL Pipelines",
-      "Data Engineering",
-      "Data Mining",
-      "Data Visualization",
-      "Power BI",
-      "Tableau",
-      "Excel"
-    ],
-    proficiency: 88,
-  },
-  {
-    title: "Programming & Databases",
-    icon: "Code2",
-    items: [
-      "Python",
-      "SQL",
-      "JavaScript",
-      "R",
-      "MongoDB"
+      "Data Integration",
+      "Data Modeling",
+      "Data Governance",
+      "Data Warehousing",
+      "Lakehouse Architecture",
     ],
     proficiency: 90,
   },
   {
-    title: "Cloud & Developer Tools",
-    icon: "Cloud",
+    title: "Big Data & Streaming",
+    icon: "Brain",
     items: [
-      "AWS",
-      "Git",
-      "Postman"
+      "Apache Spark",
+      "PySpark",
+      "Distributed Data Processing",
+      "Batch Pipelines",
+      "Streaming Pipelines",
+      "Kafka",
+      "Event Hubs",
+      "Real-Time Processing",
     ],
-    proficiency: 86,
+    proficiency: 91,
   },
   {
-    title: "Web Development",
+    title: "Cloud Platforms",
+    icon: "Cloud",
+    items: ["Microsoft Azure", "AWS", "GCP"],
+    proficiency: 90,
+  },
+  {
+    title: "Orchestration & Warehousing",
     icon: "Layout",
     items: [
-      "HTML",
-      "CSS",
-      "React.js",
-      "Node.js",
-      "Express.js",
-      "Bootstrap"
+      "Azure Data Factory",
+      "Apache Airflow",
+      "dbt",
+      "AWS Glue",
+      "Snowflake",
+      "Azure Synapse Analytics",
+      "Dimensional Modeling",
+      "Star Schema",
     ],
-    proficiency: 85,
+    proficiency: 89,
   },
   {
-    title: "Professional Strengths",
+    title: "Data Ops & Formats",
     icon: "Sparkles",
     items: [
-      "Analytical Thinking",
-      "Problem-Solving Mindset",
-      "Data Storytelling",
-      "Cross-Functional Collaboration",
-      "Continuous Learning"
+      "CI/CD",
+      "Terraform",
+      "Docker",
+      "Monitoring & Logging",
+      "SQL Server",
+      "PostgreSQL",
+      "Oracle",
+      "MySQL",
+      "Parquet",
+      "JSON",
+      "CSV",
+      "Delta",
     ],
-    proficiency: 90,
+    proficiency: 88,
   },
 ];
 
@@ -166,54 +160,52 @@ export const PROJECTS = [
 
 export const EXPERIENCE = [
   {
-    period: "Apr 2023 - Oct 2023",
-    role: "Junior Data Scientist",
-    company: "Arshil Digital Private Limited",
-    location: "Hyderabad, India",
+    period: "Jan 2025 - Present",
+    role: "Senior Data Engineer",
+    company: "Fidelity Investments",
+    location: "Jersey City, NJ",
     highlights: [
-      "Extracted and analyzed 50,000+ customer records using SQL, cutting retrieval time 35% and enabling real-time reporting for stakeholders.",
-      "Automated data cleaning workflows in Excel with VBA macros, processing 10+ datasets weekly and reducing manual effort 40%.",
-      "Collaborated with 5+ developers to identify top 3 customer pain points, leading to product features that increased retention by 12%.",
+      "Build scalable lakehouse data pipelines using Python, Spark, Azure data services, and AWS storage platforms to process large enterprise datasets.",
+      "Develop automated ETL and data integration workflows supporting ingestion of structured, semi-structured, and streaming data sources.",
+      "Create dimensional data models and curated data layers supporting analytics and reporting use cases.",
+      "Implement real-time streaming pipelines enabling near real-time analytics and operational reporting.",
+      "Optimize SQL queries and Spark transformations improving performance and processing efficiency.",
+      "Maintain data governance and data quality practices including schema validation, monitoring, and secure access controls.",
+      "Design lakehouse architecture and data warehousing solutions that support enterprise analytics workloads.",
+      "Develop analytics engineering layers and curated datasets to enable reliable reporting and downstream consumption.",
+      "Collaborate with analytics teams and engineering stakeholders to deliver reliable analytics-ready datasets.",
+      "Support CI/CD processes and automate deployment of data workflows across Azure and AWS environments.",
+      "Participate in Agile development practices including sprint planning and technical discussions.",
+      "Troubleshoot production data pipelines and improve workflow stability through monitoring and optimization.",
     ],
   },
   {
-    period: "May 2022 - Jul 2022",
-    role: "Machine Learning Intern",
-    company: "Indian Servers",
-    location: "Vijayawada",
+    period: "Jan 2020 - Dec 2023",
+    role: "Data Engineer",
+    company: "Fiserv",
+    location: "Bangalore, India",
     highlights: [
-      "Developed Random Forest and SVM models in Python achieving 88% accuracy and reducing prediction error by 20%.",
-      "Built an OpenCV + Keras object detection app processing 1,000+ images with 85% detection accuracy.",
-      "Applied transfer learning (VGG16, ResNet) to cut training time from 8 hours to 2 hours (75% improvement).",
-      "Deployed 2 ML models to production, contributing to client projects valued at $50K+.",
-    ],
-  },
-  {
-    period: "Mar 2022 - May 2022",
-    role: "Data Science Intern",
-    company: "1STOP.ai",
-    location: "Bangalore",
-    highlights: [
-      "Built TensorFlow models for MNIST digit recognition with 94% accuracy and a 25% error reduction.",
-      "Applied K-Means and Hierarchical clustering on 10,000+ customer records, defining 5 segments that boosted targeting efficiency by 30%.",
-      "Used LDA for dimensionality reduction on 100+ features, improving training time by 45%.",
-      "Engineered 15+ features with Pandas and NumPy, improving predictive performance by 18%.",
+      "Develop AWS-based ETL pipelines using Python, SQL, and Spark to process high-volume enterprise datasets.",
+      "Build batch and streaming ingestion workflows leveraging AWS cloud storage and event-driven processing.",
+      "Create dimensional data models improving reporting performance and analytics usability.",
+      "Integrate APIs, relational databases, flat files, and cloud storage platforms enabling seamless data integration across systems.",
+      "Optimize database queries and transformation logic improving pipeline efficiency and performance.",
+      "Implement CI/CD deployment workflows ensuring consistent delivery of data solutions across environments.",
+      "Migrate legacy ETL processes into orchestrated pipelines improving scalability and maintainability.",
+      "Apply data governance practices and schema validation to ensure trustworthy analytics outputs.",
+      "Deliver data warehousing-ready models using dimensional modeling and star schema techniques.",
+      "Collaborate with analytics teams to deliver production-ready datasets aligned with business reporting needs.",
+      "Maintain monitoring and validation processes ensuring data governance and operational reliability.",
+      "Support performance tuning and debugging of large-scale data workflows.",
     ],
   },
 ];
 
 export const EDUCATION = [
   {
-    period: "2024 - 2025",
-    role: "MS Computer Science @ Rowan University",
-    details: "GPA 3.8/4.0, focus on data science and machine learning.",
-    coursework:
-      "Relevant Coursework: Machine Learning, NLP, Data Mining, Database Systems, Statistics",
-  },
-  {
-    period: "2019 - 2023",
-    role: "BTech CSE @ RVR & JC College",
-    details: "CGPA 8.66/10, First Class with Distinction.",
+    period: "Jan 2024 - Dec 2025",
+    role: "Master of Science in Computer Science - Rowan University",
+    details: "Glassboro, NJ",
   },
 ];
 
@@ -265,11 +257,7 @@ export const CERTIFICATIONS = [
   },
 ];
 
-export const ABOUT_TEXT = `Hi, I'm Hemanth Chowdary Kavula.
-Computer Science graduate student specializing in machine learning, statistical analysis, and business intelligence. Iƒ?Tve built predictive models achieving 95%+ accuracy, analyzed 50,000+ records using Python and SQL, and delivered business insights through Power BI and Tableau visualizations.
+export const ABOUT_TEXT = `Hi, I'm Hemanth Kavula.
+Senior Data Engineer with 5+ years of experience building scalable data pipelines and modern lakehouse data solutions across multi-cloud environments. Strong expertise in Python, SQL, Spark, and distributed data processing with hands-on experience in ETL development, data integration, data governance, analytics engineering, and real-time streaming pipelines.
 
-Iƒ?Tm experienced in ETL pipelines, feature engineering, and cross-functional collaboration to improve KPIs. Iƒ?Tm seeking Data Scientist and Data Analyst roles where I can apply advanced analytics and data storytelling to solve complex business problems.`;
-
-
-
-
+Known for delivering reliable, high-performance data workflows that support enterprise analytics, reporting, and large-scale data operations.`;
