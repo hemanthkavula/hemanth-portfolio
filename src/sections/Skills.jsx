@@ -40,7 +40,7 @@ const Skills = () => {
                 </h3>
               </div>
               <div className="mt-4 flex flex-wrap gap-2">
-                {skill.items.slice(0, 8).map((item) => (
+                {skill.items.map((item) => (
                   <span
                     key={item}
                     className="rounded-full border border-white/10 bg-white/5 px-3 py-1 text-xs text-slate-200 transition hover:border-white/20 md:text-sm"

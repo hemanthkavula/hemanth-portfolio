@@ -71,17 +71,6 @@ const Contact = () => {
             );
           })}
         </div>
-        <div className="mt-10">
-          <a
-            href={PROFILE.resumeUrl}
-            target="_blank"
-            rel="noreferrer"
-            className="inline-flex items-center gap-2 rounded-full bg-indigo-500 px-8 py-3 text-sm font-semibold text-white transition hover:bg-indigo-400"
-            aria-label="Download resume"
-          >
-            Download Resume
-          </a>
-        </div>
       </div>
     </div>
   );

@@ -1,6 +1,6 @@
 import { useEffect, useMemo, useRef, useState } from "react";
 import { motion } from "framer-motion";
-import { ArrowDown, Download } from "lucide-react";
+import { ArrowDown } from "lucide-react";
 import { PROFILE } from "../constants";
 import { useIntersectionObserver } from "../hooks/useIntersectionObserver";
 import { usePrefersReducedMotion } from "../hooks/usePrefersReducedMotion";
@@ -76,7 +76,7 @@ const Hero = () => {
             )}
           </p>
           <p className="mt-4 text-sm font-semibold tracking-wide !text-slate-100 md:text-base">
-            Python | SQL | Spark | Azure | AWS | GCP
+            Python | SQL | Spark | ETL | AWS | Azure | Snowflake | Airflow | DBT
           </p>
         </div>
         <div className="flex flex-wrap gap-4">
@@ -85,18 +85,6 @@ const Hero = () => {
             className="rounded-full bg-indigo-500 px-6 py-3 text-sm font-semibold text-white transition hover:-translate-y-1 hover:bg-indigo-400 hover:shadow-lg hover:shadow-indigo-500/30"
           >
             View Experience
-          </a>
-
-          <a
-            href={PROFILE.resumeUrl}
-            target="_blank"
-            rel="noreferrer"
-            className="rounded-full border border-white/20 bg-white/0 px-6 py-3 text-sm font-semibold text-white transition hover:-translate-y-1 hover:border-white/40 hover:bg-white/5"
-            aria-label="Download resume"
-          >
-            <span className="flex items-center gap-2">
-              <Download size={16} /> Download Resume
-            </span>
           </a>
         </div>
 

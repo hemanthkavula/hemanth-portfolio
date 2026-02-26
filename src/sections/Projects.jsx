@@ -1,10 +1,12 @@
 import { Github } from "lucide-react";
 import { PROJECTS } from "../constants";
+import projectPlaceholder from "../assets/project-placeholder.svg";
 import { highlightMetrics } from "../utils/highlightMetrics.jsx";
 import { usePrefersReducedMotion } from "../hooks/usePrefersReducedMotion";
 
 const Projects = () => {
   const prefersReduced = usePrefersReducedMotion();
+  const visibleProjects = PROJECTS.filter((project) => !project.hidden);
 
   return (
     <div className="section-shell">
@@ -12,7 +14,7 @@ const Projects = () => {
         Projects
       </h2>
       <div className="grid gap-6 lg:grid-cols-3">
-        {PROJECTS.map((project) => (
+        {visibleProjects.map((project) => (
           <article
             key={project.title}
             className="group glass relative overflow-hidden rounded-2xl border border-white/10 p-6 transition-all duration-300 hover:-translate-y-1 hover:border-white/20 hover:shadow-2xl md:p-8"
@@ -32,6 +34,14 @@ const Projects = () => {
               event.currentTarget.style.transform = "translateY(0) rotateX(0deg) rotateY(0deg)";
             }}
           >
+            <div className="-mx-6 -mt-6 mb-5 overflow-hidden border-b border-white/10 md:-mx-8 md:-mt-8">
+              <img
+                src={project.image || projectPlaceholder}
+                alt={`${project.title} preview`}
+                className="h-44 w-full object-cover transition duration-500 group-hover:scale-[1.03]"
+                loading="lazy"
+              />
+            </div>
             <div className="mt-5">
               <h3 className="text-lg font-semibold text-white">{project.title}</h3>
             </div>

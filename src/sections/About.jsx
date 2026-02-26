@@ -61,8 +61,9 @@ const About = () => {
           </div>
           <div className="mt-6 rounded-2xl border border-white/10 bg-white/5 p-5 backdrop-blur-xl shadow-xl shadow-black/20 md:p-6">
             <p className="text-slate-100 font-medium">
-              <span className="text-slate-400">Focus:</span> Building reliable,
-              high-performance data platforms that scale.
+              <span className="text-slate-400">Focus:</span> Engineering
+              scalable, reliable data pipelines and platforms for analytics,
+              reporting, and business-critical workloads.
             </p>
           </div>
         </motion.div>
@@ -73,17 +74,22 @@ const About = () => {
           <div className="mt-6 space-y-5 text-base leading-relaxed text-slate-300/85 md:text-lg">
             <p>
               Senior Data Engineer with 5+ years of experience building
-              scalable data pipelines and modern lakehouse data solutions
-              across multi-cloud environments. Strong expertise in Python,
-              SQL, Spark, and distributed data processing with hands-on
-              experience in ETL development, data integration, data
-              governance, analytics engineering, and real-time streaming
-              pipelines.
+              enterprise-grade data platforms across Financial Services and
+              Retail industries. Expertise in distributed data processing
+              (Spark, Kafka), cloud-native architecture (AWS, Azure), and
+              scalable ETL/ELT frameworks supporting high-volume transactional
+              and analytical workloads.
             </p>
             <p>
-              Known for delivering reliable, high-performance data workflows
-              that support enterprise analytics, reporting, and large-scale
-              data operations.
+              Demonstrated success in reducing pipeline latency, improving data
+              reliability and delivering analytics-ready datasets that power
+              regulatory reporting, risk monitoring and executive
+              decision-making. Strong background in dimensional data modeling,
+              Data Lakehouse architecture (Delta Lake), and production-grade
+              orchestration (Airflow) and cloud-native workflow services.
+              Experience in implementing data governance and data quality
+              frameworks to ensure accuracy, compliance and operational
+              excellence in mission-critical environments.
             </p>
           </div>
           <div className="mt-4 flex flex-wrap gap-2">
@@ -98,7 +104,7 @@ const About = () => {
           </div>
           <p className="mt-6 font-medium text-slate-200">
             Open to Senior Data Engineer and Data Engineering roles across
-            Azure, AWS, and GCP.
+            AWS and Azure.
           </p>
           {stats.length > 0 && (
             <div className="mt-8 grid gap-4 md:grid-cols-3">

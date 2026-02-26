@@ -9,7 +9,6 @@ export const PROFILE = {
   },
   location: "Pitman, NJ",
   phone: "856-524-6050",
-  resumeUrl: "/resume.pdf",
 };
 
 export const NAV_LINKS = [
@@ -23,84 +22,132 @@ export const NAV_LINKS = [
 
 export const SKILLS = [
   {
-    title: "Programming & Querying",
+    title: "Programming Languages",
     icon: "Code2",
-    items: ["Python", "SQL", "Spark SQL"],
+    items: ["Python (Pandas, NumPy, PySpark)", "SQL", "Scala", "Bash"],
     proficiency: 92,
   },
   {
-    title: "Data Engineering & Modeling",
+    title: "Big Data & Processing",
     icon: "ChartPie",
-    items: [
-      "ETL Development",
-      "ETL Pipelines",
-      "Data Integration",
-      "Data Modeling",
-      "Data Governance",
-      "Data Warehousing",
-      "Lakehouse Architecture",
-    ],
-    proficiency: 90,
-  },
-  {
-    title: "Big Data & Streaming",
-    icon: "Brain",
     items: [
       "Apache Spark",
       "PySpark",
-      "Distributed Data Processing",
-      "Batch Pipelines",
-      "Streaming Pipelines",
-      "Kafka",
-      "Event Hubs",
-      "Real-Time Processing",
+      "Hadoop",
+      "Hive",
+      "Apache Kafka",
+      "Databricks",
+      "Delta Lake",
     ],
     proficiency: 91,
   },
   {
-    title: "Cloud Platforms",
-    icon: "Cloud",
-    items: ["Microsoft Azure", "AWS", "GCP"],
+    title: "Databases",
+    icon: "Brain",
+    items: [
+      "MySQL",
+      "PostgreSQL",
+      "SQL Server",
+      "Oracle",
+      "Snowflake",
+      "Redshift",
+      "MongoDB",
+      "DynamoDB",
+    ],
     proficiency: 90,
   },
   {
-    title: "Orchestration & Warehousing",
+    title: "Cloud Platforms",
+    icon: "Cloud",
+    items: [
+      "AWS (S3, Redshift, Glue, Athena, Lambda, EMR, Step Functions)",
+      "Azure (Data Factory, Synapse Analytics, ADLS Gen2, Blob Storage)",
+    ],
+    proficiency: 90,
+  },
+  {
+    title: "ETL / Data Integration",
     icon: "Layout",
     items: [
-      "Azure Data Factory",
-      "Apache Airflow",
-      "dbt",
       "AWS Glue",
-      "Snowflake",
-      "Azure Synapse Analytics",
-      "Dimensional Modeling",
-      "Star Schema",
+      "Azure Data Factory",
+      "Informatica",
+      "Talend",
+      "dbt",
+      "SSIS",
     ],
     proficiency: 89,
   },
   {
-    title: "Data Ops & Formats",
+    title: "Data Orchestration",
     icon: "Sparkles",
+    items: ["Apache Airflow", "AWS Step Functions", "Azure Data Factory Triggers"],
+    proficiency: 88,
+  },
+  {
+    title: "Data Modeling",
+    icon: "ChartPie",
     items: [
-      "CI/CD",
-      "Terraform",
-      "Docker",
-      "Monitoring & Logging",
-      "SQL Server",
-      "PostgreSQL",
-      "Oracle",
-      "MySQL",
-      "Parquet",
-      "JSON",
-      "CSV",
-      "Delta",
+      "Star Schema",
+      "Snowflake Schema",
+      "Dimensional Modeling",
+      "Data Vault",
     ],
+    proficiency: 90,
+  },
+  {
+    title: "Data Visualization",
+    icon: "Layout",
+    items: [
+      "Tableau",
+      "Power BI",
+      "Looker",
+      "Matplotlib",
+      "Seaborn",
+    ],
+    proficiency: 84,
+  },
+  {
+    title: "DevOps & CI/CD",
+    icon: "Sparkles",
+    items: ["Docker", "Git", "GitHub", "GitHub Actions", "Jenkins", "Terraform"],
+    proficiency: 87,
+  },
+  {
+    title: "Version Control & Collaboration",
+    icon: "Code2",
+    items: ["Git", "GitHub", "JIRA", "Confluence", "Microsoft Teams"],
+    proficiency: 86,
+  },
+  {
+    title: "Methodologies",
+    icon: "Cloud",
+    items: ["Agile", "Scrum", "Data Governance", "SDLC", "CI/CD"],
     proficiency: 88,
   },
 ];
 
 export const PROJECTS = [
   {
+    hidden: false,
+    title: "E-commerce CLV & Churn Analysis",
+    impactLine: "Customer lifetime value and churn analysis for e-commerce decision-making.",
+    description:
+      "End-to-end e-commerce customer analytics project focused on CLV estimation and churn insights.",
+    impact: [
+      "Analyzed customer behavior to estimate lifetime value (CLV) and churn risk",
+      "Generated business-focused insights to support retention and marketing strategy",
+      "Built an exploratory analytics workflow for customer-level performance trends",
+      "Packaged the analysis in a shareable GitHub project with reproducible notebooks",
+    ],
+    tech: ["Python", "Pandas", "NumPy", "Matplotlib", "Seaborn", "Jupyter Notebook"],
+    links: {
+      github:
+        "https://github.com/hemanthkavula/E-commerce-Customer-Lifetime-Value-CLV-Churn-Analysis",
+    },
+  },
+  {
+    hidden: false,
     title: "Mental Health Reddit Analysis",
     impactLine: "Classified crisis signals and surfaced mental health themes.",
     description:
@@ -126,6 +173,7 @@ export const PROJECTS = [
     },
   },
   {
+    hidden: false,
     title: "Pizza Sales Data Analysis",
     impactLine: "SQL-driven insights that improved staffing and revenue.",
     description: "Advanced SQL analysis for sales insights and KPI reporting.",
@@ -141,6 +189,7 @@ export const PROJECTS = [
     },
   },
   {
+    hidden: true,
     title: "Automated Facial Recognition Attendance",
     impactLine: "Real-time attendance automation with high recognition accuracy.",
     description: "Real-time facial recognition attendance automation.",
@@ -165,18 +214,11 @@ export const EXPERIENCE = [
     company: "Fidelity Investments",
     location: "Jersey City, NJ",
     highlights: [
-      "Build scalable lakehouse data pipelines using Python, Spark, Azure data services, and AWS storage platforms to process large enterprise datasets.",
-      "Develop automated ETL and data integration workflows supporting ingestion of structured, semi-structured, and streaming data sources.",
-      "Create dimensional data models and curated data layers supporting analytics and reporting use cases.",
-      "Implement real-time streaming pipelines enabling near real-time analytics and operational reporting.",
-      "Optimize SQL queries and Spark transformations improving performance and processing efficiency.",
-      "Maintain data governance and data quality practices including schema validation, monitoring, and secure access controls.",
-      "Design lakehouse architecture and data warehousing solutions that support enterprise analytics workloads.",
-      "Develop analytics engineering layers and curated datasets to enable reliable reporting and downstream consumption.",
-      "Collaborate with analytics teams and engineering stakeholders to deliver reliable analytics-ready datasets.",
-      "Support CI/CD processes and automate deployment of data workflows across Azure and AWS environments.",
-      "Participate in Agile development practices including sprint planning and technical discussions.",
-      "Troubleshoot production data pipelines and improve workflow stability through monitoring and optimization.",
+      "Designing and developing scalable ETL/ELT pipelines using Python, PySpark, and AWS Glue to ingest, transform, and load large volumes of data into a centralized cloud data warehouse.",
+      "Building and maintaining real-time data streaming pipelines using Apache Kafka and Spark Streaming to process high-volume data for analytics and reporting.",
+      "Developing and optimizing complex SQL queries and data models in Snowflake and Redshift to support business intelligence and downstream analytics use cases.",
+      "Orchestrating and scheduling end-to-end data pipeline workflows using Apache Airflow, implementing job dependencies, retry logic, and production monitoring.",
+      "Implemented CI/CD pipelines using GitHub Actions and Jenkins to automate build, testing, and deployment of Spark jobs, Airflow DAGs, and AWS Glue scripts, reducing manual release efforts by 60% and improving deployment reliability across production environments.",
     ],
   },
   {
@@ -185,18 +227,11 @@ export const EXPERIENCE = [
     company: "Fiserv",
     location: "Bangalore, India",
     highlights: [
-      "Develop AWS-based ETL pipelines using Python, SQL, and Spark to process high-volume enterprise datasets.",
-      "Build batch and streaming ingestion workflows leveraging AWS cloud storage and event-driven processing.",
-      "Create dimensional data models improving reporting performance and analytics usability.",
-      "Integrate APIs, relational databases, flat files, and cloud storage platforms enabling seamless data integration across systems.",
-      "Optimize database queries and transformation logic improving pipeline efficiency and performance.",
-      "Implement CI/CD deployment workflows ensuring consistent delivery of data solutions across environments.",
-      "Migrate legacy ETL processes into orchestrated pipelines improving scalability and maintainability.",
-      "Apply data governance practices and schema validation to ensure trustworthy analytics outputs.",
-      "Deliver data warehousing-ready models using dimensional modeling and star schema techniques.",
-      "Collaborate with analytics teams to deliver production-ready datasets aligned with business reporting needs.",
-      "Maintain monitoring and validation processes ensuring data governance and operational reliability.",
-      "Support performance tuning and debugging of large-scale data workflows.",
+      "Developed and maintained scalable ETL/ELT pipelines using Python, SQL, and Azure Data Factory to ingest and transform enterprise data into cloud-based data lake and warehouse platforms.",
+      "Designed dimensional data models (Star Schema) in Azure Synapse Analytics, optimizing fact and dimension tables for analytics and reporting workloads.",
+      "Developed distributed data transformation jobs using PySpark on Azure Databricks to process large-scale datasets for cleansing, aggregation, and downstream analytics use cases.",
+      "Designed and implemented CI/CD workflows using Azure DevOps to automate deployment of data pipelines and transformation artifacts across multiple environments.",
+      "Containerized PySpark workloads using Docker and integrated automated testing into deployment pipelines, enhancing code quality and reducing production defects in data transformation jobs.",
     ],
   },
 ];
@@ -258,6 +293,6 @@ export const CERTIFICATIONS = [
 ];
 
 export const ABOUT_TEXT = `Hi, I'm Hemanth Kavula.
-Senior Data Engineer with 5+ years of experience building scalable data pipelines and modern lakehouse data solutions across multi-cloud environments. Strong expertise in Python, SQL, Spark, and distributed data processing with hands-on experience in ETL development, data integration, data governance, analytics engineering, and real-time streaming pipelines.
+Senior Data Engineer with 5+ years of experience building enterprise-grade data platforms across Financial Services and Retail industries. Expertise in distributed data processing (Spark, Kafka), cloud-native architecture (AWS, Azure), and scalable ETL/ELT frameworks supporting high-volume transactional and analytical workloads.
 
-Known for delivering reliable, high-performance data workflows that support enterprise analytics, reporting, and large-scale data operations.`;
+Demonstrated success in reducing pipeline latency, improving data reliability and delivering analytics-ready datasets that power regulatory reporting, risk monitoring and executive decision-making. Strong background in dimensional data modeling, Data Lakehouse architecture (Delta Lake), and production-grade orchestration (Airflow) and cloud-native workflow services. Experience in implementing data governance and data quality frameworks to ensure accuracy, compliance and operational excellence in mission-critical environments.`;
