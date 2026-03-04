@@ -1,4 +1,4 @@
-export const PROFILE = {
+﻿export const PROFILE = {
   name: "Hemanth Kavula",
   title: "Senior Data Engineer",
   subtitle: "5+ years building scalable data pipelines and lakehouse solutions",
@@ -292,7 +292,13 @@ export const CERTIFICATIONS = [
   },
 ];
 
-export const ABOUT_TEXT = `Hi, I'm Hemanth Kavula.
-Senior Data Engineer with 5+ years of experience building enterprise-grade data platforms across Financial Services and Retail industries. Expertise in distributed data processing (Spark, Kafka), cloud-native architecture (AWS, Azure), and scalable ETL/ELT frameworks supporting high-volume transactional and analytical workloads.
+export const ABOUT_TEXT = `Hi, I'm Hemanth Kavula \uD83D\uDC4B
 
-Demonstrated success in reducing pipeline latency, improving data reliability and delivering analytics-ready datasets that power regulatory reporting, risk monitoring and executive decision-making. Strong background in dimensional data modeling, Data Lakehouse architecture (Delta Lake), and production-grade orchestration (Airflow) and cloud-native workflow services. Experience in implementing data governance and data quality frameworks to ensure accuracy, compliance and operational excellence in mission-critical environments.`;
+  A Senior Data Engineer with 5+ years of experience building scalable data platforms across AWS and Azure.
+
+  I specialize in designing ETL/ELT pipelines, distributed data processing systems, and modern lakehouse architectures that transform large-scale data into reliable, analytics-ready datasets.
+
+My core stack includes Python, SQL, Apache Spark, Kafka, Snowflake, Delta Lake, and Airflow, enabling both batch and real-time data processing.`;
+
+
+
